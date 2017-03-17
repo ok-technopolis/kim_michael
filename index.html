@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>TODO</title>
-	<meta description="Simple TODO app"/>
-	<meta keywords="TODO, app, tasks"/>
-	<link rel="stylesheet" type="text/css" href="css/todo.css">
+	<meta charset="UTF-8">
+	<title>Title</title>
 </head>
 <body>
-	<h1>TODOS</h1>
-	<form action="/action_add">
-		<img src="icons/select-all@2x.png">
-		<input type="text" name="task_name" placeholder="What needs to be done?"><br>
-	</form>
-	<ul style="list-style-type: none">
-		<li><label>
-			<input type="checkbox" name="todo_item1"><span>HTML</span>
-		</label></li>
-		<li><label>
-			<input type="checkbox" name="todo_item2" checked><span>CSS</span>
-		</label></li>
-		<li><label>
-			<input type="checkbox" name="todo_item3"><span>JS</span>
-		</label></li>
-		<li><label>
-			<input type="checkbox" name="todo_item4"><span>JS tools</span>
-		</label></li>
-	</ul>
-	<nav>
-		3 items left
-		<button type="button">All</button>
-		<button type="button">Active</button>
-		<button type="button">Completed</button>
-		Clear completed
-	</nav>
-</body>
+	<div class="todo-header">
+		<h1 class="todo-title">todos</h1>
+	</div>
 
+	<div class="todo-main">
+		<div class="todo-add">
+			<button class="todo-add_select-all" aria-label="Mark all as completed"></button>
+			<input class="todo-add_input" placeholder="What needs to be done?" aria-label="Add todo field"/>
+		</div>
+
+		<div class="todo-list">
+			<div class="todo-list__item-not-completed">
+				<input type="checkbox" class="todo-list__item-mark" aria-label="Mark as completed"/>
+				<textarea class="todo-list__item-text">HTML</textarea>
+				<button class="todo-list__item-remove" aria-label="Remove todo"></button>
+			</div>
+			<div class="todo-list__item-completed">
+				<input type="checkbox" checked="checked" class="todo-list__item-completed-mark" aria-label="Mark as not completed"/>
+				<textarea class="todo-list__item-text">CSS</textarea>
+				<button class="todo-list__item-remove" aria-label="Remove todo"></button>
+			</div>
+			<div class="todo-list__item-not-completed">
+				<input type="checkbox" class="todo-list__item-mark" aria-label="Mark as completed"/>
+				<textarea class="todo-list__item-text">JS</textarea>
+				<button class="todo-list__item-remove" aria-label="Remove todo"></button>
+			</div>
+			<div class="todo-list__item-not-completed">
+				<input type="checkbox" class="todo-list__item-mark" aria-label="Mark as completed"/>
+				<textarea class="todo-list__item-text">JS Tools</textarea>
+				<button class="todo-list__item-remove" aria-label="Remove todo"></button>
+			</div>
+		</div>
+		<div class="todo-action-bar">
+			<div class="todo-action-bar__counter-not-completed" aria-label="Count of not completed todo">n item left</div>
+			<div class="todo-action-bar__filtres">
+				<button class="todo-action-bar__filtres__all" data-filter="all" aria-label="Filter: show all todo items">All</button>
+				<button class="todo-action-bar__filtres__active" data-filter="active" aria-label="Filter: show active todo items">Active</button>
+				<button class="todo-action-bar__filtres__completed" data-filter="completed" aria-label="Filter: show completed todo items">completed</button>
+			</div>
+			<button class="todo-action-bar__clear-cmpleted" aria-label="Clear comleted todo items">Clear completed</button>
+		</div>
+	</div>
+</body>
 </html>
