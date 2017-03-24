@@ -44,31 +44,18 @@ body {
 }
 
 .todo-add_input {
+    -moz-appearance: textfield-multiline;
+    -webkit-appearance: textarea;
 	font-family: "Helvetica-Neue", serif;
 	font-size: 24pt;
 	border: 0;
 	flex: 1;
-}
-
-input[type=checkbox] + label {
-   background: #999;
-   height: 16px;
-   width: 16px;
-   display:inline-block;
-   padding: 0 0 0 0px;
-}
-   
-input[type=checkbox]:checked + label {
-    background: #0080FF;
-    height: 16px;
-    width: 16px;
-    display:inline-block;
-    padding: 0 0 0 0px;
+	outline: none;
 }
 
 .todo-item {
 	display: flex;
-	height: 60px;
+	min-height: 60px;
 	border-bottom: 1px solid #E3E3FF;
 }
 
@@ -77,7 +64,7 @@ input[type=checkbox]:checked + label {
 }
 
 .todo-item:hover > .todo-item_remove {
-	display: block;
+	visibility: visible;
 }
 
 .todo-item_text {
@@ -88,6 +75,9 @@ input[type=checkbox]:checked + label {
 	resize: none;
 	padding-left: 10px;
 	padding-top: 12px;
+	outline: none;
+	word-break: break-all;
+	max-width: 600px;
 }
 
 .todo-item_remove {
@@ -99,7 +89,7 @@ input[type=checkbox]:checked + label {
 	margin: 15px 10px; 
 	border: 0;
 	align-self: flex-end;
-	display: none;
+	visibility: hidden;
 }
 
 .todo-action-bar {
@@ -129,7 +119,7 @@ input[type=checkbox]:checked + label {
 	margin: 10px 6px;
 }
 
-.todo-filter.__active {
+.todos_filter.__active {
 	border: 1px solid #ebdfdf;
 	border-radius: 2px;
 }
