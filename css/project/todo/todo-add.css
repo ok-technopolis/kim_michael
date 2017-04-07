@@ -1,0 +1,13 @@
+ .todo-add {
+ 	display: flex;
+ 	border-bottom: 1px solid #E3E3FF;
+ }
+
+.todo-add_select-all {
+	background:url(../../../images/icons/select-all.png);
+	background-repeat: no-repeat;
+	width:24px;
+	height:12px;
+	border: 0;
+	margin: 24px 18px;
+}

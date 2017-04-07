@@ -43,16 +43,6 @@ body {
 	margin: 24px 18px;
 }
 
-.todo-add_input {
-    -moz-appearance: textfield-multiline;
-    -webkit-appearance: textarea;
-	font-family: "Helvetica-Neue", serif;
-	font-size: 24pt;
-	border: 0;
-	flex: 1;
-	outline: none;
-}
-
 .todo-item {
 	display: flex;
 	min-height: 60px;
@@ -78,18 +68,6 @@ body {
 	outline: none;
 	word-break: break-all;
 	max-width: 600px;
-}
-
-.todo-item_remove {
-	background:url(../images/icons/close.png);
-	background-repeat: no-repeat;
-	float: right;
-	width: 18px;
-	height: 18px;
-	margin: 15px 10px; 
-	border: 0;
-	align-self: flex-end;
-	visibility: hidden;
 }
 
 .todo-action-bar {

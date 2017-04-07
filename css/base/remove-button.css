@@ -1,0 +1,15 @@
+.remove-button {
+	background:url(../../images/icons/close.png);
+	background-repeat: no-repeat;
+	float: right;
+	width: 18px;
+	height: 18px;
+	margin: 15px 10px; 
+	border: 0;
+	align-self: flex-end;
+	visibility: hidden;
+}
+
+.todo-item:hover > .remove-button {
+	visibility: visible;
+}
