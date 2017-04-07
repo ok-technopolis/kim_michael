@@ -8,6 +8,7 @@
 	border: 0;
 	align-self: flex-end;
 	visibility: hidden;
+	outline: none;
 }
 
 .todo-item:hover > .remove-button {

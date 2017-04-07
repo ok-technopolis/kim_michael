@@ -11,6 +11,7 @@
 	border: 0;
 	background: #FFFFFF;
 	margin: 10px 6px;
+	outline: none;
 }
 
 .todos_filter.__active {
