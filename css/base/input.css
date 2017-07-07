@@ -1,9 +1,0 @@
-.add-input {
-    -moz-appearance: textfield-multiline;
-    -webkit-appearance: textarea;
-	font-family: "Helvetica-Neue", serif;
-	font-size: 24pt;
-	border: 0;
-	flex: 1;
-	outline: none;
-}
